@@ -12,48 +12,53 @@
 </head>
 
 <body>
-    <form action="">
+    <form>
+        
         <fieldset>
             <legend>Register form</legend>
 
-            <fieldset>
+            <!-- Name and email -->
+            <div>
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Name">
-            </fieldset>
-
-            <fieldset>
+            </div>
+            <div>
                 <label for="surname">Surname</label>
                 <input type="text" id="surname" name="surname" placeholder="Surname">
-            </fieldset>
-
-            <fieldset>
+            </div>
+            <div>
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="Email Address">
-            </fieldset>
+            </div>
 
-            <fieldset>
-                <label for="gender">Gender</label>
-                <label for="male">Male</label>
+            <!-- Gender selection -->
+            <div>
+                <label>Gender</label>
+                <label>Male</label>
                 <input type="radio" id="male" name="gender" value="Male" checked>
-                <label for="female">Female</label>
+                <label>Female</label>
                 <input type="radio" id="female" name="gender">
-            </fieldset>
+            </div>
 
-            <fieldset>
+            <!-- Picture selection -->
+            <div>
                 <label for="picture">Picture</label>
                 <input type="file" id="picture" name="picture">
-            </fieldset>
+            </div>
 
-            <fieldset>
+            <!-- Country selection -->
+            <div>
                 <label for="country">Country:</label>
+                <select name="country" id="country"></select>
                 <select>
                     <option>Germany</option>
                     <option>France</option>
                     <option>USA</option>
                 </select>
-            </fieldset>
+            </div>
 
-            <fieldset class="languages">
+            <!-- Language selection -->
+            <div class="languages">
                 <label for="languages">Preferred languages</label>
                 <select id="languages" name="languages" size="4" multiple>
                     <option value="html">HTML</option>
@@ -61,26 +66,30 @@
                     <option value="js">JS</option>
                     <option value="react">React</option>
                 </select>
-                <label for="">(To choose more than one use cmd key)</label>
-            </fieldset>
+                <label>(To choose more than one use cmd key)</label>
+            </div>
 
-            <fieldset>
-                <!-- Fields of activity (IT, Design, Other) -->
-                <label for="activity">Fields of activity</label>
+            <!-- Fields of activity (IT, Design, Other) -->
+            <div>
+                <label>Fields of activity</label>
                 <input type="checkbox" name="it" id="it">
                 <label for="it">IT</label>
                 <input type="checkbox" name="design" id="design">
                 <label for="design">Design</label>
                 <input type="checkbox" name="other" id="other">
                 <label for="other">Other</label>
-            </fieldset>
+            </div>
 
-            <fieldset>
+            <!-- Submit and reset buttons -->
+            <div>
                 <button type="submit">send</button>
                 <button type="reset">cancel</button>
-            </fieldset>
+            </div>
+
         </fieldset>
+
     </form>
+
 </body>
 
 </html>
