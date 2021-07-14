@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Register form</legend>
+
+            <fieldset>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Name">
+            </fieldset>
+
+            <fieldset>
+                <label for="surname">Surname</label>
+                <input type="text" id="surname" name="surname" placeholder="Surname">
+            </fieldset>
+
+            <fieldset>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email Address">
+            </fieldset>
+
+            <fieldset>
+                <label for="gender">Gender</label>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="Male" checked>
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender">
+            </fieldset>
+
+            <fieldset>
+                <label for="picture">Picture</label>
+                <input type="file" id="picture" name="picture">
+            </fieldset>
+
+            <fieldset>
+                <label for="country">Country:</label>
+                <select>
+                    <option>Germany</option>
+                    <option>France</option>
+                    <option>USA</option>
+                </select>
+            </fieldset>
+
+            <fieldset class="languages">
+                <label for="languages">Preferred languages</label>
+                <select id="languages" name="languages" size="4" multiple>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">JS</option>
+                    <option value="react">React</option>
+                </select>
+                <label for="">(To choose more than one use cmd key)</label>
+            </fieldset>
+
+            <fieldset>
+                <!-- Fields of activity (IT, Design, Other) -->
+                <label for="activity">Fields of activity</label>
+                <input type="checkbox" name="it" id="it">
+                <label for="it">IT</label>
+                <input type="checkbox" name="design" id="design">
+                <label for="design">Design</label>
+                <input type="checkbox" name="other" id="other">
+                <label for="other">Other</label>
+            </fieldset>
+
+            <fieldset>
+                <button type="submit">send</button>
+                <button type="reset">cancel</button>
+            </fieldset>
+        </fieldset>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form {
+    width: 600px;
+    margin: 0 auto;
+}
+fieldset {
+    padding: 2px 5px;
+}
+legend {
+    padding: 0 10px;
+}
+
+legend ~ fieldset {
+    border: none;
+}
+
+legend ~ fieldset > label:first-child {
+    display: inline-block;
+    width: 150px;
+    vertical-align: baseline;
+}
+
+.languages {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.languages > label:first-child {
+    vertical-align: top;
+    padding-top: 20px; 
+}
+
+input[type="radio"],
+input[type="checkbox"] ~ label {
+    margin-right: 20px;
+}
+
+button,
+::file-selector-button {
+    margin: 10px 0;
+    background: none;
+    padding: 2px 5px;
+    border: none;
+    border: 2px solid silver;
+    border-radius: 5px;
+}
+::file-selector-button {
+    margin-right: 5px;
+}
